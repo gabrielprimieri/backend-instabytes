@@ -3,6 +3,7 @@ import routes from "./src/routes/postsRoutes.js";
 
 // Esta linha importa o módulo Express, que é a base para criar aplicações web Node.js.
 const app = express();
+app.use(express.static("uploads"))
 routes(app)
 
 // Inicia o servidor na porta 3000 e exibe uma mensagem no console.
